@@ -31,8 +31,8 @@ PRODUCT_CHARACTERISTICS := default
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 # Device uses high-density artwork where available
-PRODUCT_AAPT_CONFIG := normal mdpi hdpi
-PRODUCT_AAPT_PREF_CONFIG := mdpi
+PRODUCT_AAPT_CONFIG := normal hdpi
+PRODUCT_AAPT_PREF_CONFIG := hdpi
 
 # Recovery allowed devices
 TARGET_OTA_ASSERT_DEVICE := a5,hct6580_weg_c_m,A5
