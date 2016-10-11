@@ -1,5 +1,5 @@
 <resources>
-  <bool name="has_led_flash">false</bool>
+  <bool name="has_led_flash">true</bool>
   <bool name="config_show_volumeRockerWake">true</bool>
 
  <!-- Using this on MSIM devices leads to weird states that break telephony's

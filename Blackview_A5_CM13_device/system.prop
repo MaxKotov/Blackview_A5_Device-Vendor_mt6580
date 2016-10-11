@@ -46,7 +46,7 @@ ro.sys.usb.charging.only=yes
 # audio
 ro.camera.sound.forced=0
 ro.audio.silent=0
-#persist.audio.dirac.speaker=true
+persist.audio.dirac.speaker=true
 
 ro.zygote.preload.enable=0
 
@@ -67,7 +67,14 @@ ro.sf.lcd_density=240
 # button jack mode & switch
 persist.sys.button_jack_profile=volume
 persist.sys.button_jack_switch=0
-
+#################################################################
+persist.multisim.config=dsds
+ro.dual.sim.phone=true
+mux.debuglog.enable=1
+persist.mtk.aee.aed=on
+ril.active.md=0
+ro.telephony.ril_class=MediaTekRIL
+#################################################################
 persist.tone_relative_volume=100
 ro.mediatek.chip_ver=S01
 ro.mediatek.version.release=BLACKVIEW-A5-Android6.0-20160926
@@ -108,8 +115,8 @@ ro.mediatek.version.sdk=4
 ro.mtk_gemini_support=1
 ##################################
 persist.radio.gemini_support=1
-ro.mtk_audio_profiles=1
-ro.mtk_audenh_support=1
+#ro.mtk_audio_profiles=1
+#ro.mtk_audenh_support=1
 ro.mtk_besloudness_suppor
 #ro.mtk_rat_wcdma_preferred=1
 ro.com.android.mobiledata=false
@@ -201,6 +208,7 @@ keyguard.no_require_sim=true
 #persist.sys.isUsbOtgEnabled=true
 #camera.disable_zsl_mode=1
 persist.sys.timezone=Europe/Kiev
+ro.product.locale=ru-RU
 ##################### modif 26.09 ###################
 ro.kernel.android.checkjni=0
 ro.telephony.ril.config=fakeiccid

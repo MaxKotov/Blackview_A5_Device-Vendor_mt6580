@@ -1,16 +1,11 @@
-# Live wallpaper packages
-PRODUCT_PACKAGES := \
-    LiveWallpapers \
-    LiveWallpapersPicker \
-    MagicSmokeWallpapers \
-    VisualizationWallpapers \
-    librs_jni
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/blackview/a5/bin,system/bin)
 
-# Publish that we support the live wallpaper feature.
-PRODUCT_COPY_FILES := \
-    packages/wallpapers/LivePicker/android.software.live_wallpaper.xml:/system/etc/permissions/android.software.live_wallpaper.xml
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/blackview/a5/etc,system/etc)
 
-# Pick up overlay for features that depend on non-open-source files
-DEVICE_PACKAGE_OVERLAYS := vendor/blackview/a5/overlay
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/blackview/a5/lib,system/lib)
 
-$(call inherit-product, vendor/blackview/a5/a5-vendor-blobs.mk)
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/blackview/a5/usr,system/usr)
+
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/blackview/a5/vendor,system/vendor)
+
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/blackview/a5/xbin,system/xbin)
